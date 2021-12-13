@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style-dist.css">
+	<title>PizzaTime</title>
+</head>
+
+<body>
+<div class="header page">
+	<div class="header__top">
+		<div class="header__top-inner">
+			<div class="header__logo">
+				<a href="">
+					<img src="./img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header__top-content">
+				<a href="#menu" class="header__top-li">пицца</a>
+				<a href="#about" class="header__top-li">о нас</a>
+				<a href="#contact" class="header__top-li">контакты</a>
+				<a href="tel:+79999999999" class="header__top-number">+7 (999) 999-99-99</a>
+			</div>
+			<button class="burger">
+				<span class="burger__line"></span>
+			</button>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__bottom-content">
+			<h2 class="header__bottom-subtitle">от итальянского повара</h2>
+			<div class="header__bottom-title">Лучшая пицца
+				в Москве
+			</div>
+			<a class="header__button" href="#menu">Выбрать</a>
+		</div>
+	</div>
+</div><section class="menu page" id="menu">
+	<div class="container">
+		<div class="menu__header">
+			<div class="title menu__title">Menu</div>
+			<ul class="menu__nav">
+				<li class="menu__nav-li active" data-f="all">все</li>
+				<li class="menu__nav-li" data-f="mushrooms">грибные</li>
+				<li class="menu__nav-li" data-f="meat">мясные</li>
+				<li class="menu__nav-li" data-f="cheese">сырные</li>
+			</ul>
+		</div>
+		<div class="menu__filter">
+			<div class="menu__item mushrooms">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/1.png.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/1.png.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Грибная</h3>
+				<div class="menu__item-text">Салями, картофель и морковь, огурцы
+					маринованные, моцарелла, </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">850 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item cheese">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/2.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/2.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Сырная</h3>
+				<div class="menu__item-text">Салями, картофель и морковь, огурцы
+					маринованные, моцарелла, цыпленок,
+					ветчина и французский соус </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">950 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item  meat">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/3.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/3.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Мясная</h3>
+				<div class="menu__item-text">Салями, картофель и морковь, огурцы
+					маринованные, моцарелла, цыпленок,
+					ветчина и французский соус </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">1050 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item mushrooms">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/4.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/4.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Грибная</h3>
+				<div class="menu__item-text">Салями, курица, моцарелла, говядина,
+					ветчина и французский соус </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">800 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item  meat">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/5.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/5.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Мясная</h3>
+				<div class="menu__item-text">Томатно-сливочный соус, бекон, моцарелла </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">920 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item cheese">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/6.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/6.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Сырная</h3>
+				<div class="menu__item-text">Картофель моцарелла, цыпленок, грибы,
+					ветчина и французский соус </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">750 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item cheese">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/7.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/7.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Сырная</h3>
+				<div class="menu__item-text">Томаты, моцарелла, цыпленок,
+					ветчина и французский соус, секректный ингредиент </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">880 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item meat">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/8.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/8.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Мясная</h3>
+				<div class="menu__item-text">Чеддер, камамбер, эдам </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">1030 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item mushrooms">
+				<picture class="img-responsive menu__item-img">
+					<source srcset="./img/menu/9.webp" type="image/webp">
+					<img loading='lazy' src="./img/menu/9.png" alt="">
+				</picture>
+				<h3 class="menu__item-title">Грибная</h3>
+				<div class="menu__item-text">Курица, говядина, сливочный соус, салями,
+					огурцы маринованные, томаты, грибы,
+					бекон </div>
+				<div class="menu__item-content">
+					<div class="menu__item-params">
+						<div class="menu__item-size _active">35см</div>
+						<div class="menu__item-size">30см</div>
+						<div class="menu__item-size">25см</div>
+					</div>
+					<div class="menu__item-footer">
+						<span class="menu__item-price">790 ₽</span>
+						<button class="menu__item-button popup__link" data-popup="order">
+							заказать
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><div class="about page" id="about">
+	<div class="about__inner">
+		<div class="about__img">
+			<picture class="img-responsive">
+				<source srcset="./img/bg.jpg.webp" type="image/webp">
+				<img src="./img/bg.jpg.png" alt="">
+			</picture>
+		</div>
+		<div class="about__content">
+			<div class="about__content-inner">
+				<h2 class="about__content-title">О нас</h2>
+				<div class="about__text">Доставим вам горячую пиццу менее чем за час или пицца бесплатно.Мы готовим пиццу
+					только из свежих продуктов. Каждый день мы покупаем свежие овощи, грибы и мясо.</div>
+			</div>
+		</div>
+	</div>
+</div><div class="contact page" id="contact">
+	<h2 class="contact__title">Контакты</h2>
+	<div class="contact__inner">
+		<div class="contact__map" id="ymap">
+
+		</div>
+		<div class="contact__content">
+			<div class="contact__item">
+				<div class="contact__desc">Адрес</div>
+				<div class="contact__text">г. Москва, Преображенская площадь, 8</div>
+			</div>
+			<div class="contact__item">
+				<div class="contact__desc">Телефон</div>
+				<a href="tel:+79117112123" class="contact__text">+7 (911) 711-21-23</a>
+			</div>
+			<div class="contact__item">
+				<div class="contact__desc">Социальные сети</div>
+				<div class="contact__soc">
+					<svg class="icon">
+						<use xlink:href='./lib/sprite.svg#vk'></use>
+					</svg>
+					<svg class="icon">
+						<use xlink:href='./lib/sprite.svg#facebook'></use>
+					</svg>
+					<svg class="icon">
+						<use xlink:href='./lib/sprite.svg#instagram'></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><div class="modals">
+	<div class="modal-overlay">
+		<div class="modal modal-order" data-target="order">
+			<div class="modal-close">
+				<img src="./img/popup/btn-close.svg" alt="">
+			</div>
+			<div class="modal-order__inner">
+				<div class="modal__title">Заполните форму</div>
+				<div class="modal__subtitle">Мы привезем вам горячую
+					пиццу за 50 минут</div>
+				<div class="modal-order__desc">
+					<div class="modal-order__img">
+						<img src="" alt="">
+					</div>
+					<div class="modal-order__title">
+						<div class="modal-order__desc-name"></div>
+						<div class="modal-order__desc-price"></div>
+					</div>
+					<div class="modal-order__desc-size"></div>
+				</div>
+				<form action="/" method="post" class="modal-order__form">
+					<input name="name" type="text" class="modal-order__form-box is-clear" placeholder="Имя" required>
+					<input name="telefon" type="tel" class="modal-order__form-box is-clear" placeholder="Телефон" required>
+					<input name="adress" type="text" class="modal-order__form-box is-clear" placeholder="Адрес" required>
+					<div class="modal-order__form-box--select">
+						<select class="modal-order__form-box">
+							<option selected value="cash">Оплата наличными</option>
+							<option value="cashless">Оплата картой</option>
+						</select>
+					</div>
+					<button type="submit" class="modal-order__btn" data-popup="thanks">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<div class="modal modal-thanks" data-target="thanks">
+			<div class="modal-close">
+				<img src="./img/popup/btn-close.svg" alt="">
+			</div>
+			<div class="modal-thanks__inner">
+				<div class="modal__title modal-thanks__title">Успешно отправлено</div>
+				<div class="modal__subtitle modal-thanks__subtitle">Мы уже начали готовить вашу пиццу</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=87b4adda-c36e-46a8-9baf-cece67f84aa1&lang=ru_RU"></script>
+	<!-- Подключение java Script -->
+	<script src="./js/main.js" async></script>
+</body>
+
+</html>
